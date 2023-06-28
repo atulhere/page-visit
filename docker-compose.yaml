@@ -2,8 +2,8 @@ version: '3.0'
 services:
   redis-server:
     image: redis
-  maa:
+  page-visit:
     build: .
-    image: maa
+    image: page-visit
     ports:
       - "9000:9003"

@@ -2,10 +2,10 @@
 FROM golang:1.15.0-alpine
 
 # Install some dependencies 
-RUN mkdir /maa
-ADD  . /maa
-WORKDIR  /maa
+RUN mkdir /page-visit
+ADD  . /page-visit
+WORKDIR  /page-visit
 RUN go build -o main .
 
 # Default commands 
-CMD ["/maa/main"]
+CMD ["/page-visit/main"]
